@@ -1,0 +1,57 @@
+<!--Aqui vai ter uma imagem pelo CSS-->
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <!--Removendo o mq-estilo.css
+        <link rel="stylesheet" href="mq-estilo.css">
+    -->
+    <link rel="shortcut icon" href="opsz24.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Controle Alfandega</title>
+</head>
+
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <!-- Aqui vai ter uma imagem pelo CSS // Controle de Alfandega = BRASIL não é Estrangeiro// -->
+            </div>
+            <div id="formulario">
+                <h1> Controle Alfandega</h1>
+                <p>Bem-vindo novamente,
+                <p>Digite a Nacionalidade sua e veremos seu Visto de permanencia !.</p>
+                <p>Nacionalidade:<input type="text" name="txtvel" id="txtvel"> <br>(Ex: US, UK, IT, KO)</p>
+                <P>Seu Nome:<br><input type="text" name="txtplac" id="txtplac"><br>(Nome e Sobrenome)</p>
+                </P>
+                <input type="button" value="Verificar" onclick="window()">
+                <div id="resp"> </div>
+
+                <script>
+                    //precisa ser alterado os tipos de variaveis e nome dos objetos!
+                    function window() {
+                        var txtvel = window.document.querySelector('input#txtvel')
+                        var nac = Text(txtvel.value)
+                        var resp = window.document.querySelector('div#resp')
+                        var nome = String(txtplac.value)
+                        var txtplac = window.document.querySelector('input#txtplac')
+                        /*ESSAS LINHAS RECEBEM AS VARIAVEIS DE VELOCIDADE E RETORNA A 'RESP' DO VALOR DE VELOCIDADE*/
+                        //resp.innerHTML = '<p>A velocidade do veiculo é de ' +vel+ ' Km/h</p>'
+                        if (nac > br) {
+                            resp.innerHTML += `<p>voce nao tem nacionalidade ${nac} ,${nome}</p>`
+                        } else {
+                            resp.innerHTML += `<p>voce tem nacionalidade  ${nac} , ${nome}</p>`
+                        }
+                    }
+                </script>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>
